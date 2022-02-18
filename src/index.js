@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// conexion entre la app react y el navegador 
+// 1- necesitamos la variable react en scope
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import React from 'react'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// 2- necesitamos la variable reactDOM en scope
+
+import ReactDOM from 'react-dom'
+
+// 3- necesitamos un componente en scope
+import App from './App.js'
+import "./style.css"
+
+//const App = () => "Hola Mundo"
+
+// 4- necesitamos poner el componente en el dom
+//funcion que renderiza en el dom a: el componente que contiene al resto, b: donde queres mostrar el componente
+//ReactDOM.render(a,b) 
+//ReactDOM.hydrate()
+ReactDOM.render(<App/>,document.getElementById("root"))
+
