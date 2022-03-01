@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
 import Main from "./components/Main"
-import ItemListContainer from "./components/IemListContainer"
+import ItemListContainer from "./components/ItemListContainer"
 
 
 const App = () =>  {
@@ -11,7 +11,7 @@ const App = () =>  {
     <>
     <NavBar/>
     <Main nombre="Lucia" edad={25}/>
-    <ItemListContainer/>
+    <ItemListContainer greeting="Bienvenidos al catalogo de" marca= "Blue"/>
     <Footer/>
     </>
     )

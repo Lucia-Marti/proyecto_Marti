@@ -68,3 +68,29 @@ main{
     text-align: center;
     font-size: 20px;
 }
+
+/* ITEM COUNT contador */
+
+.itemCount {
+    margin: 50px 480px ;
+    display: flex;
+    flex-direction: column;
+}
+.itemCount p {
+   font-size: 30px;
+   margin-bottom: 30px;
+   text-align: center;
+}
+
+#agregar{
+    margin-top: 5px;
+    height: 60px;
+}
+
+#contador{
+    margin-bottom: 0;
+    padding: 10px 0;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+}

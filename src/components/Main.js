@@ -1,4 +1,4 @@
-import {Alert, Button} from "react-bootstrap"
+import {Alert} from "react-bootstrap"
 
 const Main = (props) => {
 
@@ -12,10 +12,9 @@ const Main = (props) => {
 
   return (
         <main>
-            <Alert variant="danger">Entrega 3  </Alert>
+            
             <p className='alert'>Bienvenido {props.nombre}</p>
-        
-            <Alert variant="info"> {frase} </Alert>   
+            <Alert variant="success"> {frase} </Alert>   
         </main>
   )
 }

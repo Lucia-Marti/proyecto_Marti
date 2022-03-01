@@ -1,9 +1,10 @@
 import { CardGroup, Card } from "react-bootstrap"
+import ItemCount from "./ItemCount"
 
-const IemListContainer = () => {
+const IemListContainer = (props) => {
   return (
     <div>
-        <h2>Esto es un catalogo</h2>
+        <h2> {props.greeting} {props.marca} </h2>
     
         <CardGroup>
             
@@ -47,6 +48,9 @@ const IemListContainer = () => {
             </Card.Footer>
             </Card>
         </CardGroup>
+
+
+        <ItemCount stock={10} initial={1} />
     </div>
     
   )
