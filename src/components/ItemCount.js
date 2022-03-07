@@ -1,33 +1,32 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ButtonGroup, Button} from 'react-bootstrap';
 
-const ItemCount = (props) => {
+const ItemCount = ({initial,stock}) => {
   
-    const [estado, setEstado] = useState(props.initial)
-
+    const [count, setCount] = useState(initial)
+   
     const sumar = () => {
-        if ( estado < props.stock ) {
-            setEstado(estado + 1)
+        if ( count < stock ) {
+            setCount(count + 1)
         }else {
             alert("no hay mas stock");
         }
     }
 
     const restar = () => {
-        if ((estado <= props.stock) && ( estado > 1) ) {
-            setEstado(estado - 1)
+        if ((count <= stock) && ( count > 1) ) {
+            setCount(count - 1)
         }else {
             alert("Debe seleccionar al menos una unidad");
         }
     }
 
     const onAdd = () =>{
-        setEstado(estado)
-        console.log( `El cliente pidio ${estado} unidades`);
-        alert(`Se agregaron ${estado} unidades al carrito`);
+        setCount(count)
+        console.log( `El cliente pidio ${count} unidades`);
+        alert(`Se agregaron ${count} unidades al carrito`);
   
-    } 
-    
+    }     
 
     return (
         <div className='itemCount'>
@@ -36,7 +35,7 @@ const ItemCount = (props) => {
 
             <ButtonGroup id='ButtonGroup' >
                 <Button variant="secondary" onClick={restar} >-</Button>
-                <p id='contador'> {estado} </p>
+                <p id='contador'> {count} </p>
                 <Button variant="secondary" onClick={sumar}>+</Button>        
             </ButtonGroup>
 
