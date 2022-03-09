@@ -4,7 +4,9 @@ import ItemList from "./ItemList"
 
 function getDatos(){
     return new Promise((resolve, reject) => {
-        setTimeout(function() {
+        setTimeout(
+
+            function() {
 
             const logica = Math.floor(Math.random()*100)
             const error = logica < 5 ? true : false;
@@ -14,11 +16,12 @@ function getDatos(){
             } else {
                 reject("Hubo un error obteniendo los datos")   
             }
+            
         },2000)
     })
 }
 
-const IemListContainer = (props) => {
+const ItemListContainer = (props) => {
 
     const [items, setItems] = useState([])
 
@@ -41,4 +44,4 @@ const IemListContainer = (props) => {
 
 }
 
-export default IemListContainer
+export default ItemListContainer

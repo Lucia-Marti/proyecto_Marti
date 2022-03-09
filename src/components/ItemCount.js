@@ -31,8 +31,6 @@ const ItemCount = ({initial,stock}) => {
     return (
         <div className='itemCount'>
 
-            <p >Contador - Desafio 4</p>
-
             <ButtonGroup id='ButtonGroup' >
                 <Button variant="secondary" onClick={restar} >-</Button>
                 <p id='contador'> {count} </p>

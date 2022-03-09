@@ -1,11 +1,11 @@
 const products = [{
     "id": "8657974266",
-    "title": "Rabbit - Whole",
+    "title": "Auriculares JBL",
     "descripcion": "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
     "precio": 3752.61,
-    "categoria": "Books",
+    "categoria": "Tecnología - Accesorios",
     "img": "https://dummyimage.com/250x200.png/d283e1",
-    "stock": 1
+    "stock": 9
   }, {
     "id": "0025992023",
     "title": "Wine - Ej Gallo Sonoma",
@@ -13,7 +13,7 @@ const products = [{
     "precio": 5020.97,
     "categoria": "Garden",
     "img": "https://dummyimage.com/250x200.png/c3bde6",
-    "stock": 2
+    "stock": 12
   }, {
     "id": "7412707345",
     "title": "Flour - Fast / Rapid",
@@ -29,7 +29,7 @@ const products = [{
     "precio": 1527.51,
     "categoria": "Jewelry",
     "img": "https://dummyimage.com/250x200.png/38afbe",
-    "stock": 4
+    "stock": 41
   }, {
     "id": "0362587590",
     "title": "Blueberries - Frozen",
@@ -37,7 +37,7 @@ const products = [{
     "precio": 3509.76,
     "categoria": "Clothing",
     "img": "https://dummyimage.com/250x200.png/0dfa56",
-    "stock": 5
+    "stock": 15
   }, {
     "id": "1571566643",
     "title": "Bread - Multigrain, Loaf",
@@ -45,7 +45,7 @@ const products = [{
     "precio": 2519.06,
     "categoria": "Health",
     "img": "https://dummyimage.com/250x200.png/9607b1",
-    "stock": 6
+    "stock": 26
   }, {
     "id": "2175182827",
     "title": "Sesame Seed Black",
@@ -53,7 +53,7 @@ const products = [{
     "precio": 8250.26,
     "categoria": "Garden",
     "img": "https://dummyimage.com/250x200.png/690983",
-    "stock": 7
+    "stock": 37
   }, {
     "id": "9807075718",
     "title": "Wine - Zinfandel California 2002",
@@ -61,7 +61,7 @@ const products = [{
     "precio": 8647.76,
     "categoria": "Beauty",
     "img": "https://dummyimage.com/250x200.png/ee5044",
-    "stock": 8
+    "stock": 18
   }, {
     "id": "0888948875",
     "title": "Bread - Crusty Italian Poly",
@@ -69,7 +69,7 @@ const products = [{
     "precio": 2886.65,
     "categoria": "Grocery",
     "img": "https://dummyimage.com/250x200.png/ab4f14",
-    "stock": 9
+    "stock": 29
   }, {
     "id": "7372240689",
     "title": "Chevril",
@@ -77,7 +77,7 @@ const products = [{
     "precio": 4469.33,
     "categoria": "Baby",
     "img": "https://dummyimage.com/250x200.png/0201c8",
-    "stock": 10
+    "stock": 17
   }]
   
 
