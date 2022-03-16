@@ -40,7 +40,8 @@ footer{
     font-weight: lighter;   
 }
 footer p{
-    margin-top: 10px;
+    margin: 10px;
+
 }
 
 /* cart widget */
@@ -70,7 +71,6 @@ main{
 }
 
 
-
 /* Item */
 .item_list{
     display: flex;
@@ -78,14 +78,42 @@ main{
     justify-content: center;
 }
 .item{
-    width: 250px;
-    height: 350px;
-    border: 0.5px solid rgb(139, 136, 136) ;
+    width: 300px;
+    height: 100%;
+    border: 0.5px solid  rgb(55, 87, 117);;
+    border-radius: 5px;
     text-align: center;
     margin: 50px 20px;
+
+}
+.item_body-h4 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .item_body{
     margin-top: 10px;
+}
+
+.image{
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.verDetalle{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgb(55, 87, 117);
+    padding: 15px;
+    border-radius: 5px;
+}
+.verDetalle:hover{
+    color: white;
+    background-color: rgb(20, 44, 66);
 }
 
 /* DETAIL */
@@ -98,21 +126,18 @@ main{
     display: flex;
     justify-content: center;
     border: 1px solid rgba(185, 185, 185, 0.507);
-    width: 600px;
     border: 0.1px solid rgb(170, 169, 169);
     box-shadow: 10px 5px 5px rgb(189, 189, 189);
     margin: 50px 0px;
+    padding: 30px;
 
 }
-.img_detail--1{
-    width: 300px;
-    margin-bottom: 20px;
-}
 .img_detail{
-    width: 100px;
-    height: 100px;
-    border: 0.1px solid rgb(170, 169, 169);    
+    max-height: 600px;
+    max-width: 500px;
+    padding: 30px;
 }
+
 .detail_info{
     display: flex;
     flex-direction: column;
@@ -120,18 +145,31 @@ main{
     align-items: center;
     margin: 0px 20px
 }
+.detail_info h4{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.detail_info p{
+    font-size: 12px;
+}
+.rate{
+    font-size: 30px;
+}
+
 
 #descripcion{
+    font-size: 18px;
     text-align: justify;
-    margin: 0px 10px ;
+    margin-bottom: 20px ;
+    max-width: 250px;
 }
+
 
 /*Item Count */
 
 .itemCount {
     display: flex;
-    flex-direction: column; 
-    margin-top: 30px;
+    flex-direction: column;
 }
 #agregar{
     margin-top: 5px;
@@ -146,3 +184,7 @@ main{
     color: black;
     text-align: center;
 }
+.active{
+    color: rgb(167, 167, 167);
+}
+

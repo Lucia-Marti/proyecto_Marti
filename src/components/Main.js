@@ -1,22 +1,30 @@
-import {Alert} from "react-bootstrap"
+import { Route, Routes} from "react-router-dom";
+import ItemDetailContainer from "./ItemDetailContainer"
+import ItemListContainer from "./ItemListContainer";
+import Carrito from "./Carrito"
 
-const Main = (props) => {
-
-    let frase;
-
-    if (props.edad >= 18) {
-        frase = "Puedes acceder, eres mayor de edad"
-    } else {
-        frase = "No puedes acceder, debes ser mayor de edad"
-    }
+const Main = () => {
 
   return (
         <main>
+
+            <Routes>
+                <Route path="/" element= {<ItemListContainer/>} />
+
+                <Route path="/categoria/:categoriaNombre" element= {<ItemListContainer/>} />
+ 
+                <Route path="/producto/:productoId" element= {<ItemDetailContainer/>} />
+
+                <Route path="/Cart" element= {<Carrito/>} />
+
+            </Routes>
+       
             
-            <p className='alert'>Bienvenido {props.nombre}</p>
-            <Alert variant="success"> {frase} </Alert>   
+
         </main>
   )
 }
+
+    
 
 export default Main

@@ -1,25 +1,18 @@
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
 import Main from "./components/Main"
-import ItemListContainer from "./components/ItemListContainer"
-import ItemDetailContainer from "./components/ItemDetailContainer"
-
+import {BrowserRouter} from "react-router-dom"
 
 const App = () =>  {
-
-
     return (
-    <>
-    <NavBar/>
-    <Main nombre="Lucia" edad={25}/>
-    <ItemListContainer greeting="Bienvenidos al catalogo de" marca= "Blue"/>
-    <ItemDetailContainer/>
-    <Footer/>
-    </>
+        <BrowserRouter>
+            <NavBar/>
+            <Main/>
+            <Footer/>
+        </BrowserRouter>
     )
     
 } 
 
-// module.export = App
 export default App
 
