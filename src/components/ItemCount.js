@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { ButtonGroup, Button} from 'react-bootstrap';
 
-const ItemCount = ({initial,stock}) => {
+const ItemCount = ({initial,stock, onAdd}) => {
   
     const [count, setCount] = useState(initial)
    
@@ -12,7 +12,7 @@ const ItemCount = ({initial,stock}) => {
             alert("no hay mas stock");
         }
     }
-
+    
     const restar = () => {
         if ((count <= stock) && ( count > 1) ) {
             setCount(count - 1)
@@ -21,10 +21,11 @@ const ItemCount = ({initial,stock}) => {
         }
     }
 
-    const onAdd = () =>{
-        setCount(count)
-        console.log( `El cliente pidio ${count} unidades`);
-        alert(`Se agregaron ${count} unidades al carrito`);
+    const agregar = () =>{
+        onAdd(count)
+        //setCount(count)
+        //console.log( `El cliente pidio ${count} unidades`);
+        //alert(`Se agregaron ${count} unidades al carrito`);
   
     }     
 
@@ -37,8 +38,8 @@ const ItemCount = ({initial,stock}) => {
                 <Button variant="secondary" onClick={sumar}>+</Button>        
             </ButtonGroup>
 
-            <Button id='agregar' variant="secondary" onClick={onAdd}>Agregar al carrito</Button>
-
+            <Button id='agregar' variant="secondary" onClick={agregar}>Agregar al carrito</Button>
+            
         </div>
     )
 

@@ -80,7 +80,7 @@ main{
 .item{
     width: 300px;
     height: 100%;
-    border: 0.5px solid  rgb(55, 87, 117);;
+    border: 0.5px solid  rgb(55, 87, 117);
     border-radius: 5px;
     text-align: center;
     margin: 50px 20px;
@@ -156,12 +156,29 @@ main{
     font-size: 30px;
 }
 
-
 #descripcion{
     font-size: 18px;
     text-align: justify;
     margin-bottom: 20px ;
     max-width: 250px;
+}
+
+.detail_finalizar{
+    font-size: 14px;
+    background-color:rgb(55, 87, 117);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin:10px;
+}
+.detail_finalizar:hover{
+    color:rgb(55, 87, 117);
+    background-color:rgba(55, 87, 117, 0.822);
+    font-weight: bold;
+
 }
 
 

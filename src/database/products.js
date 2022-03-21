@@ -82,7 +82,7 @@ const products = [{
     "description": "Maecenas tincidunt lacus at velit.",
     "price": 8250.26,
     "category": "Anillo",
-    "image": "https://es.pandora.net/dw/image/v2/BFCR_PRD/on/demandware.static/-/Sites-pandora-master-catalog/default/dw797577fc/images/productimages/main/167736C01_RGB.jpg?sw=440&sh=440&sm=fit&sfrm=png&bgcolor=F5F5F5",
+    "image": "https://www.elsalee.fr/5300-thickbox_default/bague-argent-doree-couronne-laurier.jpg",
     "stock": 37,
     "rating": {
       "rate" : 4,
