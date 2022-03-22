@@ -205,3 +205,22 @@ main{
     color: rgb(167, 167, 167);
 }
 
+/*Carrito*/
+.item_carrito{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+.item_carrito img{
+    width: 100px;
+}
+#borrarItem_carrito{
+    font-size: 16px;
+    padding: 10px;
+    color:white;
+    background-color:rgba(55, 87, 117, 0.822);
+}
+
+

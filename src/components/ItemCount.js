@@ -22,11 +22,8 @@ const ItemCount = ({initial,stock, onAdd}) => {
     }
 
     const agregar = () =>{
-        onAdd(count)
         //setCount(count)
-        //console.log( `El cliente pidio ${count} unidades`);
-        //alert(`Se agregaron ${count} unidades al carrito`);
-  
+        onAdd(count)
     }     
 
     return (

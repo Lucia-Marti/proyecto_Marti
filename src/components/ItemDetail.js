@@ -1,27 +1,27 @@
 import Rate from 'rc-rate';
 import 'rc-rate/assets/index.css';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import ItemCount from "./ItemCount.js"
 import {Link } from "react-router-dom"
 
+import { contexto } from './CartContext.js';
+
 const ItemDetail = ({item}) => {
 
-  const [stock, setStock] = useState(item.stock)
-  const [cant, setCant] = useState(0)
+  const {addItem} = useContext(contexto)
   
+  //const [stock, setStock] = useState(item.stock)
 
-  const onAdd = (cantidad) => {
-
+  const onAdd = (cant) => {
+    addItem(item,cant)
+    /*
     if(cantidad > stock){
       alert("No hay disponible ese stock")
     }else {
       setCant(cant+cantidad)
       setStock(stock-cantidad)
-    }
+    }*/
   }
-
-  console.log("cantidad",cant );
-  console.log("stock",stock );
 
   return (
     <section className="detail">
@@ -35,7 +35,7 @@ const ItemDetail = ({item}) => {
           <Rate className='rate' allowHalf count={5} value={item.rating?.rate} />
           <p>Valoraciones: {item.rating?.count} </p>
           <h2> ${item.price} </h2>
-          <p>Stock disponible: {stock} </p>
+          <p>Stock disponible: {item.stock} </p>
           
           <ItemCount onAdd={onAdd} stock={item.stock} initial={1}  />
 
