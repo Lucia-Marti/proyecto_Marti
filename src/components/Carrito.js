@@ -3,12 +3,9 @@ import {contexto} from "./CartContext.js"
 
 const Carrito = () => {
 
-  const {carrito,removeItem,clear,calcularTotal,item} = useContext(contexto)
+  const {carrito,removeItem,clear,calcularTotal} = useContext(contexto)
 
-  const handleClick = () => {
-      removeItem("737255240689",1)
-      //como le paso los datos del item ??? de donde los importo por context? o por props?
-  }
+
   return (
     <div>
       <h2>Carrito</h2>
@@ -22,8 +19,7 @@ const Carrito = () => {
               <p>{i.cant} {i.cant === 1 ? "unidad" : "unidades"} x ${i.price} = ${(i.cant * i.price).toFixed(2)}</p>
             </div>
 
-            
-            <button id="borrarItem_carrito" onClick={handleClick} > X</button>
+            <button id="borrarItem_carrito" onClick={()=>removeItem(i.id, i.cant)} > X</button>
             
           </div>
       ))}
