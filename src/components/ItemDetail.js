@@ -1,26 +1,20 @@
 import Rate from 'rc-rate';
 import 'rc-rate/assets/index.css';
-import { useState, useContext } from 'react';
+import {useState, useContext } from 'react';
 import ItemCount from "./ItemCount.js"
 import {Link } from "react-router-dom"
 
-import { contexto } from './CartContext.js';
+import { contexto } from '../context/CartContext.js';
 
 const ItemDetail = ({item}) => {
 
+  const [cantidad, setCantidad] = useState(0);
+
   const {addItem} = useContext(contexto)
-  
-  //const [stock, setStock] = useState(item.stock)
 
   const onAdd = (cant) => {
     addItem(item,cant)
-    /*
-    if(cantidad > stock){
-      alert("No hay disponible ese stock")
-    }else {
-      setCant(cant+cantidad)
-      setStock(stock-cantidad)
-    }*/
+    setCantidad(cant)
   }
 
   return (
@@ -37,9 +31,9 @@ const ItemDetail = ({item}) => {
           <h2> ${item.price} </h2>
           <p>Stock disponible: {item.stock} </p>
           
-          <ItemCount onAdd={onAdd} stock={item.stock} initial={1}  />
+          <ItemCount onAdd={onAdd} stock={item.stock} initial={0}  />          
 
-          <Link className='detail_finalizar' to="/Cart">Finalizar compra</Link>
+          {cantidad > 0 ? <Link className='detail_finalizar' variant="secondary" to='/cart'>Ver carrito</Link> : null}
           
         </div>
       </div>   

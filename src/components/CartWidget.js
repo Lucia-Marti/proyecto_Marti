@@ -1,20 +1,20 @@
 import { useContext } from 'react';
-import { contexto } from './CartContext.js';
+import { contexto } from '../context/CartContext';
 
 
 const CartWidget = () => {
 
   const {cantidad} = useContext(contexto)
 
-  return (
+  if (cantidad != 0) {
+    return (
       <div id="cart"> 
         <span className="material-icons"> shopping_cart </span>    
         {cantidad}
       </div>
-    
-  )
+    )} else {
+       return (null)
+    }
 }
-
-// (cantidad = 0) ? "no muestro carrito" : "muestro carrito"
-
+ 
 export default CartWidget

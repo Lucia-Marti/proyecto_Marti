@@ -47,8 +47,8 @@ const ItemListContainer = () => {
         const anillos = items.filter(a => a.category === "Anillo")
         return ( <ItemList items={anillos} /> )
     }
-        
-    if(loading){
+
+    if(loading){ 
         return (<h2> Cargando... </h2> )
     } else {
         return ( <ItemList items={items} /> )
