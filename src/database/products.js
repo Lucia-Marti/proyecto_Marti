@@ -1,4 +1,5 @@
-const products = [{
+const products = [
+  {
     "id": "8657974266",
     "title": "Aros oval",
     "description": "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
@@ -31,7 +32,7 @@ const products = [{
     "price": 3384.68,
     "category": "Pulsera",
     "image": "https://i0.wp.com/marynatorrescomplementos.com/wp-content/uploads/2020/02/002P-1.jpg?fit=600%2C600&ssl=1",
-    "stock": 3,
+    "stock": 33,
     "rating": {
       "rate" : 2,
       "count" :31

@@ -11,14 +11,9 @@ const NavBar = () => {
     
     <header>
 
-      <Link to="/"> 
-        <h1>Blue Brand</h1>
-      </Link>
+      <Link to="/"><h1>Blue Brand </h1> </Link>
 
-      <Link to="/Cart">
-        <CartWidget/>
-      </Link>
-      
+      <Link to="/Cart"> <CartWidget/> </Link>
       
       <nav>
           <NavLink to="/categoria/aros"> Aros</NavLink>

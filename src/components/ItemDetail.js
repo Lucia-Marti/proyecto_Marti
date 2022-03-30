@@ -9,7 +9,6 @@ import { contexto } from '../context/CartContext.js';
 const ItemDetail = ({item}) => {
 
   const [cantidad, setCantidad] = useState(0);
-
   const {addItem} = useContext(contexto)
 
   const onAdd = (cant) => {

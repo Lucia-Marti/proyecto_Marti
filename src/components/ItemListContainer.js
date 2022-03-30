@@ -1,22 +1,8 @@
 import { useEffect, useState} from "react"
 import { useParams } from "react-router-dom"
-import products from "../database/products.js"
 import ItemList from "./ItemList"
-
-function getDatos(){
-    return new Promise((resolve, reject) => {
-        setTimeout(function() {
-            const logica = Math.floor(Math.random()*100)
-            const error = logica < 2 ? true : false;
-
-            if (error === false) {
-                resolve(products)
-            } else {
-                reject("Hubo un error obteniendo los datos")
-            }
-        },1000)   
-    })
-}
+import {db} from "../firebase"
+import {collection, getDocs, query , where} from "firebase/firestore" 
 
 const ItemListContainer = () => {
 
@@ -24,35 +10,24 @@ const ItemListContainer = () => {
     const [loading, setLoading] = useState(true)
     const {categoriaNombre} = useParams()
 
-    useEffect(() => {
-        getDatos()
-        .then((respuesta) => setItems(respuesta))
-        .catch((error) => console.error(error))
-        .finally(()=> setLoading(false))
-    },[])
+    const productosCollection = collection(db, "productos")
     
-    if (categoriaNombre === "aros") {
-        const aros = items.filter(a => a.category === "Aros")
-        return ( <ItemList items={aros} /> )
-    }
-    if (categoriaNombre === "pulsera") {
-        const pulseras = items.filter(a => a.category === "Pulsera")
-        return ( <ItemList items={pulseras} /> )
-    }
-    if (categoriaNombre === "collar") {
-        const collares = items.filter(a => a.category === "Collar")
-        return ( <ItemList items={collares} /> )
-    }
-    if (categoriaNombre === "anillo") {
-        const anillos = items.filter(a => a.category === "Anillo")
-        return ( <ItemList items={anillos} /> )
-    }
+    useEffect(() => {  
+
+        const consulta = !categoriaNombre ? getDocs(productosCollection) : getDocs(query(productosCollection,where("category","==",categoriaNombre)))
+            consulta
+                .then(res => setItems(res.docs.map(doc => doc.data())))
+                .catch(() => console.error("Error al cargar los productos"))
+                .finally(() => setLoading(false))
+
+    }, [categoriaNombre])
+
 
     if(loading){ 
         return (<h2> Cargando... </h2> )
     } else {
         return ( <ItemList items={items} /> )
-    }
+    }   
 
 }
 
