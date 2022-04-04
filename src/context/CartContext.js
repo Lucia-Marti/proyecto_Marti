@@ -42,8 +42,8 @@ const CartContext = ({children}) => {
 
     const calcularTotal = () => {
         let total = 0
-        carrito.forEach(i => total = (i.cant*i.price).toFixed(2))
-        return total
+        carrito.forEach(i => total += (i.cant*i.price))
+        return total.toFixed(2)
     }
 
     const valorDeContexto = {

@@ -2,14 +2,7 @@ import { useContext } from "react"
 import { Link } from "react-router-dom"
 import {contexto} from "../context/CartContext.js"
 
-import {db} from "../firebase"
-import {collection, serverTimestamp, addDoc} from "firebase/firestore" 
-
-
-
 const Carrito = () => {
-
-
 
   const {carrito,removeItem,clear,calcularTotal} = useContext(contexto)
 
@@ -40,8 +33,14 @@ const Carrito = () => {
         ))}
   
         <p>El total es de ${calcularTotal()} </p>
+
+        <Link className="finalizarCompra" to="/"> Continuar Comprando </Link>
+
+        <Link className="finalizarCompra" to="/FinalizarOrden">Finalizar Orden </Link>
   
         <button onClick={clear} > Limpiar Carrito</button>
+
+
 
       </div>   
     )

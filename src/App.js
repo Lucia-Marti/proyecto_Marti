@@ -7,9 +7,9 @@ import CartContext from "./context/CartContext"
 const App = () =>  {
     return (
         <CartContext>
-            <BrowserRouter>
+            <BrowserRouter >
                 <NavBar/>
-                <Main/>
+                <Main />
                 <Footer/>
             </BrowserRouter>
         </CartContext>
