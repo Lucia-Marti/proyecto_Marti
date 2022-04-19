@@ -46,36 +46,36 @@ $ npm start
      style="width: 100%; margin: 10px 0px;" />
 
 ### 2- Categoria Anillos
-<img src="src/assets/dos.png"
+<img src="https://github.com/Lucia-Marti/proyecto_Marti/blob/7b49817a30ef09e7483c13bdbfeece7695c892c6/src/assets/dos.PNG"
      alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
 ### 3- Detalle de producto
-<img src="src/assets/tres.png"
+<img src="https://github.com/Lucia-Marti/proyecto_Marti/blob/7b49817a30ef09e7483c13bdbfeece7695c892c6/src/assets/tres.PNG"
      alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
 ### 4- Selección de producto
-<img src="src/assets/cuatro.png"
+<img src="https://github.com/Lucia-Marti/proyecto_Marti/blob/7b49817a30ef09e7483c13bdbfeece7695c892c6/src/assets/cuatro.PNG"
      alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
 ### 5- Carrito
-<img src="src/assets/cinco.png"
+<img src="https://github.com/Lucia-Marti/proyecto_Marti/blob/7b49817a30ef09e7483c13bdbfeece7695c892c6/src/assets/cinco.PNG"
      alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
 ### 6- Finalización de compra
-<img src="src/assets/seis.png"
+<img src="https://github.com/Lucia-Marti/proyecto_Marti/blob/7b49817a30ef09e7483c13bdbfeece7695c892c6/src/assets/seis.PNG"
      alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
 ### 7- Confirmación de pedido
-<img src="src/assets/siete.png"
+<img src="https://github.com/Lucia-Marti/proyecto_Marti/blob/7b49817a30ef09e7483c13bdbfeece7695c892c6/src/assets/siete.PNG"
      alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
 ### 8- ID referente al pedido
-<img src="src/assets/ocho.png"
+<img src="https://github.com/Lucia-Marti/proyecto_Marti/blob/7b49817a30ef09e7483c13bdbfeece7695c892c6/src/assets/ocho.PNG"
      alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
