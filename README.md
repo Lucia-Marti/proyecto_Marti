@@ -1,72 +1,81 @@
-# Getting Started with Create React App
+# BLUE BRAND
+## Proyecto Final React - Coder House
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/24a532c2-0d11-4baf-b3e6-59a2ce09b56c/deploy-status)](https://app.netlify.com/sites/exquisite-chaja-5244c6/deploys)
 
-## Available Scripts
+* Link a [página web](https://exquisite-chaja-5244c6.netlify.app/)
 
-In the project directory, you can run:
+* Link a video [GIF](https://drive.google.com/drive/folders/1lLaM_kV2vdvpqnkW-W4zPfdk6um0icmX?usp=sharing)
+#
+### Tabla de contenido
+* [Información general](#Información-General)
+* [Tecnologías](#tecnologías)
+* [Setup](#setup)
+* [Proceso de Compra](#proceso-de-compra)
+#
+## Información General
+Blue Brand es el proyecto final para el curso de React JS de la academia Coder House. 
+##
+La aplicacion consiste en un e-commerce de accesorios para la venta online y envios en Argentina.
+##
+El usuario puede navegar por un catálogo completo, o enfocarse en una categoría específica de accesorios. Cada producto cuenta con un detalle con descripción, precio y stock al cual el usuario puede acceder y determinar la cantidad a comprar. Una vez agregados los productos, se puede continuar la compra o dirigirse al "carrito", donde se encuentra el detalle de lo seleccionado previamente. 
+##
+En esta interfaz el usuario tiene nuevamente la posibilidad de continuar comprando, eliminar elementos seleccionados o incluso todos los elementos, o finalizar la compra.Esta última opción re-dirige al usuario a un formulario para completar los datos personalas y finalmente concretar la operación recibiendo como comprobante un ID referente a la operación. 
+#
+## Tecnologías
 
-### `npm start`
+- React version 17.0.2 - Libreria de JavaScript
+- React-router-dom 6.2.2 - Paquete para rutas dinámicas
+- Firebase 9.6.9  - Base de datos 
+- Lottie-React 2.21 - Animaciones en momentos de carga
+- Rc-Rate 17.0.2 - Puntuación de los productos
+- Sweetalert 2.1.2 - Alertas y advertencias para el usuario
+#
+## Setup
+* git clone [repositorio](https://github.com/Lucia-Marti/proyecto_Marti.git)
+```  
+$ cd ../proyecto
+$ npm install
+$ npm start
+```
+#
+## Proceso de compra
+### 1- Catálogo general
+<img src="src/assets/uno.png"
+     alt="Markdown Monster icon"
+     style="width: 100%; margin: 10px 0px;" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2- Categoria Anillos
+<img src="src/assets/dos.png"
+     alt="Markdown Monster icon"
+     style="width: 100%; margin: 10px 0px;" />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3- Detalle de producto
+<img src="src/assets/tres.png"
+     alt="Markdown Monster icon"
+     style="width: 100%; margin: 10px 0px;" />
 
-### `npm test`
+### 4- Selección de producto
+<img src="src/assets/cuatro.png"
+     alt="Markdown Monster icon"
+     style="width: 100%; margin: 10px 0px;" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 5- Carrito
+<img src="src/assets/cinco.png"
+     alt="Markdown Monster icon"
+     style="width: 100%; margin: 10px 0px;" />
 
-### `npm run build`
+### 6- Finalización de compra
+<img src="src/assets/seis.png"
+     alt="Markdown Monster icon"
+     style="width: 100%; margin: 10px 0px;" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 7- Confirmación de pedido
+<img src="src/assets/siete.png"
+     alt="Markdown Monster icon"
+     style="width: 100%; margin: 10px 0px;" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# proyecto_Marti
-# proyecto_Marti
+### 8- ID referente al pedido
+<img src="src/assets/ocho.png"
+     alt="Markdown Monster icon"
+     style="width: 100%; margin: 10px 0px;" />

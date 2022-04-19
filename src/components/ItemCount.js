@@ -1,41 +1,28 @@
 import { useState } from 'react';
-import { ButtonGroup, Button} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import swal from 'sweetalert'
 
 const ItemCount = ({initial,stock, onAdd}) => {
   
     const [count, setCount] = useState(initial)
    
-    const sumar = () => {
-        if ( count < stock ) {
-            setCount(count + 1)
-        }else {
-            alert("no hay mas stock");
-        }
-    }
+    const sumar = () => count < stock ? setCount(count + 1) : swal("No hay más stock","", "info")
     
-    const restar = () => {
-        if ((count <= stock) && ( count > 0) ) {
-            setCount(count - 1)
-        }else {
-            alert("Debe seleccionar al menos una unidad");
-        }
-    }
+    const restar = () => ((count <= stock) && ( count > 0)) ? setCount(count - 1) : swal("Debe seleccionar al menos una unidad","", "info")
 
-    const agregar = () =>{
-        onAdd(count)         
+    const agregar = () => {
+        swal("Producto agregado correctamente","", "success")        
+        onAdd(count) 
     }     
 
     return (
         <div className='itemCount'>
-
-            <ButtonGroup id='ButtonGroup' >
-                <Button variant="secondary" onClick={restar} >-</Button>
+            <div id='buttonGroup' >
+                <button className='secondary' onClick={restar} >-</button>
                 <p id='contador'> {count} </p>
-                <Button variant="secondary" onClick={sumar}>+</Button>        
-            </ButtonGroup>
+                <button className='secondary' onClick={sumar}>+</button>        
+            </div>
 
-            <Button id='agregar' variant="secondary" onClick={count > 0 ? agregar : agregar.disabled}>Agregar al carrito</Button>
+            <button id='agregar' className='secondary' onClick={count > 0 ? agregar : agregar.disabled}>Agregar al carrito</button>
         </div>
     )
 

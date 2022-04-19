@@ -6,10 +6,8 @@ import Order from "./Order";
 import OrderExit from "./OrderExit";
 
 const Main = () => {
-
   return (
         <main>
-
             <Routes>
                 <Route path="/" element= {<ItemListContainer/>} />
 
@@ -23,9 +21,6 @@ const Main = () => {
 
                 <Route path="/OrderExit" element= {<OrderExit/>} />
             </Routes>
-       
-            
-
         </main>
   )
 }

@@ -1,5 +1,4 @@
 import { createContext, useState } from "react"
-
 export const contexto = createContext()
 const {Provider} = contexto
 
@@ -26,9 +25,7 @@ const CartContext = ({children}) => {
         }
     }
     
-    const isInCart = (ide) =>{
-        return carrito.some(item => item.id === ide)
-    } 
+    const isInCart = (ide) => carrito.some(item => item.id === ide) 
     
     const removeItem = (ide, cant) => {
         setCarrito(carrito.filter(i => i.id !== ide))
@@ -59,7 +56,6 @@ const CartContext = ({children}) => {
         <Provider value={valorDeContexto}>
             {children}
         </Provider>
-
     )
 }
 

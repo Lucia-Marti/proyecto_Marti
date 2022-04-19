@@ -3,7 +3,6 @@ import 'rc-rate/assets/index.css';
 import {useState, useContext } from 'react';
 import ItemCount from "./ItemCount.js"
 import {Link } from "react-router-dom"
-
 import { contexto } from '../context/CartContext.js';
 
 const ItemDetail = ({item}) => {

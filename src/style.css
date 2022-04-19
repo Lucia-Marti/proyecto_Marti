@@ -2,38 +2,41 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+/*
 #root {
     display: flex;
     flex-direction: column;
-}
-header{
-    background-color: rgb(55, 87, 117);
-    padding-top: 30px;
+}*/
+header, footer{
+    background-image: url("https://spanishbloggin.files.wordpress.com/2014/07/night-sky-stars.jpeg");
+    background-size: cover;
+    padding: 50px;
 }
 
 h1{
     color: white;
     text-align: center;
+    margin: 20px 0px;
 }
 
 nav{
     display: flex;
     justify-content: center;
     align-items: center;  
-    margin-bottom: 30px;
 }
 a{
+    font-size: 16px;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 40px;    
 }
+h1:hover, a:hover{
 
-main {
-    flex-grow: 1;
+    text-shadow: 10px 5px 5px rgb(20, 44, 66);
 }
-
 
 footer{
     background-color: rgb(55, 87, 117);
@@ -67,6 +70,9 @@ footer p{
 h2 {
     margin-top: 60px;
     text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 26px;
 }
 main{
     text-align: center;
@@ -81,20 +87,28 @@ main{
     justify-content: center;
 }
 .item{
+    
     width: 300px;
-    height: 100%;
-    border: 0.5px solid  rgb(55, 87, 117);
-    border-radius: 5px;
+    height: 80%;
     text-align: center;
     margin: 50px 20px;
-
+    border-radius: 10px;
 }
+.item:hover{
+    box-shadow: 5px 5px 5px rgb(20, 44, 66);
+}
+
 .item_body-h4 {
+    font-size: 24px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 .item_body{
+    margin-top: 10px;
+}
+.item_body-precio{
+    font-size: 20px;
     margin-top: 10px;
 }
 
@@ -110,13 +124,14 @@ main{
     width: 100%;
     color: white;
     text-align: center;
-    background-color: rgb(55, 87, 117);
+    background-color: rgb(20, 44, 66);
+    border-radius: 10px;
     padding: 15px;
-    border-radius: 5px;
+    margin-top: 10px;
 }
 .verDetalle:hover{
     color: white;
-    background-color: rgb(20, 44, 66);
+    background-color: rgba(20, 44, 66, 0.888);
 }
 
 /* DETAIL */
@@ -177,10 +192,7 @@ main{
     margin:10px 0px;
 }
 .detail_finalizar:hover{
-    color:rgb(55, 87, 117);
     background-color:rgba(55, 87, 117, 0.822);
-    font-weight: bold;
-
 }
 
 
@@ -189,6 +201,18 @@ main{
 .itemCount {
     display: flex;
     flex-direction: column;
+    margin: 20px 0px;
+}
+#buttonGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondary{
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color:rgb(114, 111, 111);
+    cursor: pointer;
 }
 #agregar{
     margin-top: 5px;
@@ -232,10 +256,22 @@ main{
 .item_carrito img{
     width: 100px;
 }
+.total{ 
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
 #borrarItem_carrito, .finalizarCompra{
     font-size: 16px;
     padding: 10px;
     color:white;
+    background-color:rgb(55, 87, 117);
+    text-transform: uppercase;
+}
+#borrarItem_carrito:hover, .finalizarCompra:hover{
+    cursor: pointer;
     background-color:rgba(55, 87, 117, 0.822);
 }
 
@@ -247,13 +283,51 @@ main{
     align-items: center;
 }
 .form_order label{
-    margin-top: 20px;
+    margin: 20px 0px 10px 0px;
+    font-size: 22px;
+}
+.form_order input, .form_order select, .form_order button{
+   width: 300px;
+   height: 30px;
 }
 
 .form_order button{
-    margin: 20px;
+    margin: 30px;
+    background-color:rgb(55, 87, 117);
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.form_order button:hover{
+    cursor: pointer;
+    background-color:rgba(55, 87, 117, 0.822);
+}
+
+/* Main */
+main{
+    min-height: 100vh;
 }
 
 
+/*Order Exit*/
+.orderExit{
+    margin: 50px;
+}
+.id{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 

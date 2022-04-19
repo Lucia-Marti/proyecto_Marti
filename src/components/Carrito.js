@@ -6,21 +6,18 @@ const Carrito = () => {
 
   const {carrito,removeItem,clear,calcularTotal} = useContext(contexto)
 
-  if (carrito.length === 0) {
-    return (
+  return (<>
+    <h2>Carrito</h2> 
+
+    {carrito.length === 0  ?
       <div className="sin_items">
-        <h2>Carrito</h2>
         <h6>Aún no hay items cargados en el carrito</h6>
         <Link className="volverInicio_carrito" to="/">Volver al inicio</Link>
-      </div>
-    )
-  } else{
-    return (
+      </div> :
       <div>
-        <h2>Carrito</h2>
         {carrito.map(i => (
             <div className="item_carrito" key={i.id}>
-              <img src={i.image} />
+              <img src={i.image} alt="img" />
               <div className="item_carrito--info">
               <p>
                 {i.title}</p>
@@ -32,19 +29,16 @@ const Carrito = () => {
             </div>
         ))}
   
-        <p>El total es de ${calcularTotal()} </p>
+        <p className="total">El total es de ${calcularTotal()} </p>
 
         <Link className="finalizarCompra" to="/"> Continuar Comprando </Link>
 
         <Link className="finalizarCompra" to="/FinalizarOrden">Finalizar Orden </Link>
   
-        <button onClick={clear} > Limpiar Carrito</button>
-
-
-
+        <button className="finalizarCompra" onClick={clear} > Limpiar Carrito</button>
       </div>   
-    )
-  }
+    }
+  </>)
 }
 
 export default Carrito

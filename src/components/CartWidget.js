@@ -6,15 +6,14 @@ const CartWidget = () => {
 
   const {cantidad} = useContext(contexto)
 
-  if (cantidad != 0) {
-    return (
+  return ( cantidad !== 0 ?
       <div id="cart"> 
         <span className="material-icons"> shopping_cart </span>    
         {cantidad}
       </div>
-    )} else {
-       return (null)
-    }
+     : null
+  ) 
+    
 }
  
 export default CartWidget
