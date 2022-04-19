@@ -34,7 +34,7 @@ En esta interfaz el usuario tiene nuevamente la posibilidad de continuar compran
 ## Setup
 * git clone [repositorio](https://github.com/Lucia-Marti/proyecto_Marti.git)
 ```  
-$ cd ../proyecto
+$ cd ../proyecto_Marti
 $ npm install
 $ npm start
 ```
