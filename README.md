@@ -41,7 +41,7 @@ $ npm start
 
 ## Proceso de compra
 ### 1- Catálogo general
-<img src="https://github.com/Lucia-Marti/proyecto_Marti/tree/main/src/assets/UNO.png"
+<img src="https://github.com/Lucia-Marti/proyecto_Marti/blob/7b49817a30ef09e7483c13bdbfeece7695c892c6/src/assets/uno.PNG"
      alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
