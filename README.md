@@ -41,41 +41,41 @@ $ npm start
 
 ## Proceso de compra
 ### 1- Catálogo general
-<img src="src/assets/uno.png"
-     alt="Markdown Monster icon"
+<img src="./src/assets/uno.png"
+     alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
 ### 2- Categoria Anillos
 <img src="src/assets/dos.png"
-     alt="Markdown Monster icon"
+     alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
 ### 3- Detalle de producto
 <img src="src/assets/tres.png"
-     alt="Markdown Monster icon"
+     alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
 ### 4- Selección de producto
 <img src="src/assets/cuatro.png"
-     alt="Markdown Monster icon"
+     alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
 ### 5- Carrito
 <img src="src/assets/cinco.png"
-     alt="Markdown Monster icon"
+     alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
 ### 6- Finalización de compra
 <img src="src/assets/seis.png"
-     alt="Markdown Monster icon"
+     alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
 ### 7- Confirmación de pedido
 <img src="src/assets/siete.png"
-     alt="Markdown Monster icon"
+     alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
 
 ### 8- ID referente al pedido
 <img src="src/assets/ocho.png"
-     alt="Markdown Monster icon"
+     alt="Proceso de compra"
      style="width: 100%; margin: 10px 0px;" />
